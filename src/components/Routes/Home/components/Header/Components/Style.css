@@ -1,0 +1,96 @@
+#sidebar-main{
+    width: 70%;
+    height: 100vh;
+    background-color: #fefffe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0%);
+    transition: all 0.4s;
+    -webkit-box-shadow: 200px -51px 300px 200px rgba(133,133,133,0.84);
+    -moz-box-shadow: 200px -51px 300px 200px rgba(133,133,133,0.84);
+    box-shadow: 200px -51px 300px 200px rgba(133,133,133,0.84);
+    display: flex;
+    flex-flow: column;
+}
+
+#sidebar-menu-banner{
+    background: transparent url("https://assets.myntassets.com/f_webp,dpr_1.5,q_auto,w_400,c_limit,fl_progressive/assets/images/2023/8/19/88e4bdc0-99eb-46c7-8df0-969b8bcd844e1692384110033-Flat-300_3240x1488.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.sidebar-menu-categories{
+    height: auto;
+    width: 100%;
+    padding: 0.8em 0em 0.8em;
+}
+
+.sidebar-menu-categories-link{
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #3e4152;
+    line-height: 3.5em;
+    margin: 0 0 0 1.5em;
+}
+
+
+hr.sidebar-seperator {
+    border-top: 1px solid #c1c1c1;
+    width: 80%;
+}
+
+.sidebar-menu-categories-bottom{
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #282c3f;
+    line-height: 3.5em;
+    margin: 0 0 0 1.5em;
+}
+
+#sidebar-footer{
+    font-family: 'Assistant', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: #282c3f;
+    flex-grow: 1;
+    padding: 0 0 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #sidebar-menu-banner{
+        height: 30%;
+    }
+    #sidebar-main{
+        display: none;
+    }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1280px) {
+    #sidebar-main{
+        display: none;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) and (max-width: 1536px) {
+    #sidebar-main{
+        display: none;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    #sidebar-main{
+        display: none;
+    }
+}

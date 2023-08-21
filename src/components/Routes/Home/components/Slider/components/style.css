@@ -1,0 +1,121 @@
+#slider-wrapper{
+    width: auto;
+	font-family: 'Montserrat', sans-serif;
+    height: 70vh;
+    color: rgba(255, 255, 255, 0.8);
+    /* position: relative; */
+}
+
+.flex__content {
+    padding: 0 10% 0;
+}
+
+.text--sub{
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.text--big {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5em;
+	font-weight: 700;
+	line-height: 25px;
+}
+
+.text--normal {
+    font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 22px;
+}
+
+.flex__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+	width: 100%;
+    height: 100%;
+	z-index: 1;
+}
+
+.flex__item--left {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    background-color: #3e9fe6;
+    /* position: relative; */
+}
+
+.flex__item--right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 35%;
+    background-color: #d3eaef;
+}
+
+.shirt__img {
+	position: absolute;
+	bottom: 40px;
+	right: 22%;
+	max-height: 20vw;
+    transform: translate3d(0,0,0);
+    transition: opacity 0.43s 0.6s, transform 5s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+    /* animation: shirtanimation--start 0.6s ease-in forwards; */
+	
+}
+
+.text__background {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 90px;
+	bottom: -100px;
+	color: rgba(0,0,0,0.05);
+	font-size: 80px;
+	font-weight: 700;
+}
+
+.slider_navi {
+    margin: 0 1em 0;
+}
+
+.slider_navi_sub {
+    height: 8px;
+    width: 25px;
+    margin: 0.8em 0 0;
+    cursor: pointer;
+}
+
+/* animation start */
+.animation--start {
+    animation: shirtanimation--start 0.6s ease-in forwards;
+}
+
+/* animation end */
+.animation--end { 
+        animation: shirtanimation--end 0.6s ease-in forwards;
+}
+
+@keyframes shirtanimation--start {
+    from {
+        transition: opacity 0.43s 0.6s, transform 5s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+        transform: translate3d(-200px, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shirtanimation--end {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        transition: opacity 0.43s 0.6s, transform 5s 0.65s cubic-bezier(0, 0.88, 0.4, 0.93);
+        transform: translate3d(200px, 0, 0);
+        opacity: 0;
+    }
+}
